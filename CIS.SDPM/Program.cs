@@ -13,6 +13,12 @@ namespace CIS.SDPM
     {
         static void Main(string[] args)
         {
+            /* BEGIN untuk menghindari error underlying connection was closed */
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls |
+                                       SecurityProtocolType.Tls11 |
+                                       SecurityProtocolType.Tls12;
+            /* END untuk menghindari error underlying connection was closed */
+
             Console.WriteLine("TOKEN {0}", getToken());
             Console.ReadKey();
         }
