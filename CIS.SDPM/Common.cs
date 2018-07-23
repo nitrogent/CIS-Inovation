@@ -9,6 +9,8 @@ namespace CIS.SDPM
 {
     class Common
     {
+        public static String ApiToken = "";
+
         public static string GetBaseUrl()
         {
             string value = "";

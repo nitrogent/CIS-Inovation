@@ -18,8 +18,9 @@ namespace CIS.SDPM
                                        SecurityProtocolType.Tls11 |
                                        SecurityProtocolType.Tls12;
             /* END untuk menghindari error underlying connection was closed */
+            Common.ApiToken = Function.GetAPIToken.getToken();
 
-            Console.WriteLine("TOKEN {0}", Function.GetAllProject.GetAllProjects(Function.GetAPIToken.getToken()));
+            Console.WriteLine("TOKEN {0}", Function.GetAllProject.GetAllProjects(Common.ApiToken));
             Console.ReadKey();
         }
 
