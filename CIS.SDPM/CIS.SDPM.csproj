@@ -54,5 +54,12 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Database\Function\" />
+    <Folder Include="Database\Script\" />
+    <Folder Include="Database\SP\" />
+    <Folder Include="Database\Table\" />
+    <Folder Include="Database\Type\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
