@@ -11,6 +11,21 @@ namespace CIS.SDPM
     {
         public static String ApiToken = "";
 
+        public static string GetConnectionString()
+        {
+            string value = "";
+            try
+            {
+                value = System.Configuration.ConfigurationManager.ConnectionStrings["DBConnection"].ConnectionString;
+            }
+            catch (Exception ex)
+            {
+                value = ex.Message;
+            }
+
+            return value;
+        }
+
         public static string GetBaseUrl()
         {
             string value = "";
