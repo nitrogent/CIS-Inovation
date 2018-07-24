@@ -14,7 +14,11 @@ namespace CIS.SDPM.Entities
         public string sprintTitle { get; set; }
         public int cardId { get; set; }
         public string cardCode { get; set; }
-        public DateTime createdOn { get; set; }
+        public string cardTitle { get; set; }
         public string createdBy { get; set; } //FirstName + LastName
+        public DateTime createdOn { get; set; }
+        public string updatedBy { get; set; }
+        public DateTime updateOn { get; set; }
+        public int rowStatus { get; set; }
     }
 }
