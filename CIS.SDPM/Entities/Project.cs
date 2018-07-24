@@ -8,8 +8,12 @@ namespace CIS.SDPM.Entities
 {
     class Project
     {
-        public int id { get; set; }
+        public int projectId { get; set; }
         public string projectTitle { get; set; }
+        public int sprintId { get; set; }
+        public string sprintTitle { get; set; }
+        public int cardId { get; set; }
+        public string cardCode { get; set; }
         public DateTime createdOn { get; set; }
         public string createdBy { get; set; } //FirstName + LastName
     }
